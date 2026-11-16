@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hunarly connects people who need services with skilled local workers looking for new opportunities."
+    />
+    <meta name="theme-color" content="#10233f" />
+    <script>
+      try {
+        const theme = localStorage.getItem("hunarly:theme");
+        document.documentElement.dataset.theme =
+          theme === "dark" || theme === "light" ? theme : "light";
+        document.documentElement.style.colorScheme =
+          document.documentElement.dataset.theme;
+        document
+          .querySelector('meta[name="theme-color"]')
+          ?.setAttribute(
+            "content",
+            document.documentElement.dataset.theme === "dark"
+              ? "#0B1220"
+              : "#101D35",
+          );
+      } catch {
+        document.documentElement.dataset.theme = "light";
+      }
+    </script>
+    <title>Hunarly — Your Hunar, Your Opportunity</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

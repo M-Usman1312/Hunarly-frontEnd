@@ -1,0 +1,874 @@
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --navy: #f1f5f9;
+  --navy-light: #dce8f5;
+  --teal: #20b8a5;
+  --teal-dark: #62d8c6;
+  --teal-action-hover: #1a9888;
+  --ink: #f1f5f9;
+  --muted: #a8b5c7;
+  --line: #2b3b50;
+  --page: #0b1220;
+  --surface: #172438;
+  --surface-subtle: #111c2e;
+  --surface-elevated: #1d2d43;
+  --text-secondary: #a8b5c7;
+  --focus-ring: rgba(32, 184, 165, 0.3);
+  --shadow-card: 0 18px 42px rgba(0, 0, 0, 0.2);
+}
+
+html[data-theme="dark"] {
+  background: var(--page);
+  color: var(--ink);
+}
+
+html[data-theme="dark"] body,
+html[data-theme="dark"] .app-shell,
+html[data-theme="dark"] .page-content {
+  background: var(--page);
+  color: var(--ink);
+}
+
+html[data-theme="dark"] h1,
+html[data-theme="dark"] h2,
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] h5,
+html[data-theme="dark"] h6,
+html[data-theme="dark"] strong,
+html[data-theme="dark"] .brand,
+html[data-theme="dark"] .navigation-link,
+html[data-theme="dark"] .login-link,
+html[data-theme="dark"] .button-secondary,
+html[data-theme="dark"] .worker-profile-link,
+html[data-theme="dark"] .info-hero-text-link {
+  color: var(--navy);
+}
+
+html[data-theme="dark"] p,
+html[data-theme="dark"] small,
+html[data-theme="dark"] .section-heading p,
+html[data-theme="dark"] .hero-description,
+html[data-theme="dark"] .search-field input,
+html[data-theme="dark"] .worker-meta,
+html[data-theme="dark"] .worker-reviews,
+html[data-theme="dark"] .registration-promise p,
+html[data-theme="dark"] .registration-privacy-note,
+html[data-theme="dark"] .contact-field,
+html[data-theme="dark"] .auth-field,
+html[data-theme="dark"] .auth-check-label,
+html[data-theme="dark"] .profile-meta > span,
+html[data-theme="dark"] .discovery-results-heading,
+html[data-theme="dark"] .filter-label {
+  color: var(--text-secondary);
+}
+
+html[data-theme="dark"] .site-header {
+  border-color: rgba(43, 59, 80, 0.9);
+  background: rgba(11, 18, 32, 0.94);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.12);
+}
+
+html[data-theme="dark"] .navigation-link,
+html[data-theme="dark"] .login-link,
+html[data-theme="dark"] .session-greeting {
+  color: #b7c4d5;
+}
+
+html[data-theme="dark"] .navigation-link:hover,
+html[data-theme="dark"] .navigation-link-active,
+html[data-theme="dark"] .login-link:hover,
+html[data-theme="dark"] .info-hero-text-link:hover {
+  color: var(--teal-dark);
+}
+
+html[data-theme="dark"] .theme-toggle,
+html[data-theme="dark"] .mobile-menu-toggle,
+html[data-theme="dark"] .logout-button {
+  border-color: var(--line);
+  background: var(--surface-elevated);
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .theme-toggle:hover,
+html[data-theme="dark"] .mobile-menu-toggle:hover,
+html[data-theme="dark"] .logout-button:hover {
+  border-color: #347b72;
+  background: #20394c;
+  color: #8ce4d5;
+}
+
+html[data-theme="dark"] .navigation-link {
+  border-color: var(--line);
+}
+
+html[data-theme="dark"] .brand-mark,
+html[data-theme="dark"] .auth-brand-mark {
+  color: #101d35;
+}
+
+html[data-theme="dark"] .header-cta,
+html[data-theme="dark"] .hero-primary,
+html[data-theme="dark"] .button-primary,
+html[data-theme="dark"] .search-submit,
+html[data-theme="dark"] .auth-submit,
+html[data-theme="dark"] .registration-submit,
+html[data-theme="dark"] .contact-submit,
+html[data-theme="dark"] .profile-hero-action .button,
+html[data-theme="dark"] .profile-contact-card .button,
+html[data-theme="dark"] .whatsapp-link,
+html[data-theme="dark"] .about-hero-actions .button,
+html[data-theme="dark"] .faq-contact-cta .button {
+  border-color: #268f83;
+  background: #147f73;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.17);
+}
+
+html[data-theme="dark"] .header-cta:hover,
+html[data-theme="dark"] .hero-primary:hover,
+html[data-theme="dark"] .button-primary:hover,
+html[data-theme="dark"] .search-submit:hover,
+html[data-theme="dark"] .auth-submit:hover,
+html[data-theme="dark"] .registration-submit:hover,
+html[data-theme="dark"] .contact-submit:hover,
+html[data-theme="dark"] .profile-hero-action .button:hover,
+html[data-theme="dark"] .profile-contact-card .button:hover,
+html[data-theme="dark"] .whatsapp-link:hover,
+html[data-theme="dark"] .about-hero-actions .button:hover,
+html[data-theme="dark"] .faq-contact-cta .button:hover {
+  background: #1a9888;
+}
+
+html[data-theme="dark"] .button-secondary {
+  border-color: #3a4b60;
+  background: var(--surface-elevated);
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .button-secondary:hover {
+  border-color: #597083;
+  background: #263a50;
+}
+
+html[data-theme="dark"] .hero-section {
+  background:
+    radial-gradient(ellipse at 86% 22%, rgba(32, 184, 165, 0.12), transparent 34%),
+    linear-gradient(125deg, #0b1220 0%, #0e1929 55%, #10242d 100%);
+}
+
+html[data-theme="dark"] .home-page,
+html[data-theme="dark"] .info-page,
+html[data-theme="dark"] .discovery-page,
+html[data-theme="dark"] .worker-profile-page {
+  background: var(--page);
+}
+
+html[data-theme="dark"] .section-block,
+html[data-theme="dark"] .categories-section,
+html[data-theme="dark"] .featured-section,
+html[data-theme="dark"] .final-cta-section,
+html[data-theme="dark"] .info-overview,
+html[data-theme="dark"] .mission-vision-section,
+html[data-theme="dark"] .benefits-info-section,
+html[data-theme="dark"] .info-bottom-cta {
+  background-color: var(--page);
+}
+
+html[data-theme="dark"] .how-section,
+html[data-theme="dark"] .info-problem-section,
+html[data-theme="dark"] .info-how-section {
+  background-color: var(--surface-subtle);
+}
+
+html[data-theme="dark"] .hero-search,
+html[data-theme="dark"] .category-card,
+html[data-theme="dark"] .steps-panel,
+html[data-theme="dark"] .worker-card,
+html[data-theme="dark"] .profile-hero-card,
+html[data-theme="dark"] .profile-section,
+html[data-theme="dark"] .registration-form,
+html[data-theme="dark"] .contact-form,
+html[data-theme="dark"] .mission-card,
+html[data-theme="dark"] .info-audience-card,
+html[data-theme="dark"] .benefits-info-card,
+html[data-theme="dark"] .about-story-card,
+html[data-theme="dark"] .faq-list,
+html[data-theme="dark"] .results-count,
+html[data-theme="dark"] .filter-panel,
+html[data-theme="dark"] .empty-results,
+html[data-theme="dark"] .contact-info-card,
+html[data-theme="dark"] .contact-modal,
+html[data-theme="dark"] .welcome-panel,
+html[data-theme="dark"] .worker-dashboard-card,
+html[data-theme="dark"] .registration-success {
+  border-color: var(--line);
+  background-color: var(--surface);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.17);
+}
+
+html[data-theme="dark"] .category-card:hover,
+html[data-theme="dark"] .worker-card:hover {
+  border-color: #3b746c;
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.25);
+}
+
+html[data-theme="dark"] .category-icon,
+html[data-theme="dark"] .category-card:nth-child(3n + 2) .category-icon,
+html[data-theme="dark"] .steps-audience,
+html[data-theme="dark"] .steps-panel-teal .steps-audience,
+html[data-theme="dark"] .step-icon,
+html[data-theme="dark"] .steps-panel-teal .step-icon,
+html[data-theme="dark"] .cta-sparkle {
+  background: #173a39;
+  color: #8ce4d5;
+}
+
+html[data-theme="dark"] .problem-node,
+html[data-theme="dark"] .problem-node-one {
+  background: #24384c;
+  color: #d7e4f2;
+}
+
+html[data-theme="dark"] .problem-node-two,
+html[data-theme="dark"] .problem-node-three {
+  background: #24554f;
+  color: #d7f5ef;
+}
+
+html[data-theme="dark"] .hero-search {
+  border-color: #2b3b50;
+  background: var(--surface);
+}
+
+html[data-theme="dark"] .final-cta-card,
+html[data-theme="dark"] .welcome-panel,
+html[data-theme="dark"] .worker-dashboard-card,
+html[data-theme="dark"] .registration-success {
+  background:
+    radial-gradient(ellipse at 100% 0%, rgba(32, 184, 165, 0.1), transparent 40%),
+    var(--surface);
+}
+
+html[data-theme="dark"] .search-label,
+html[data-theme="dark"] .category-card-copy strong,
+html[data-theme="dark"] .worker-card-name h3,
+html[data-theme="dark"] .steps-panel > h3,
+html[data-theme="dark"] .step-copy h4,
+html[data-theme="dark"] .worker-profile-link,
+html[data-theme="dark"] .discovery-toolbar h2,
+html[data-theme="dark"] .empty-results h3,
+html[data-theme="dark"] .profile-section h2,
+html[data-theme="dark"] .profile-contact-card h2,
+html[data-theme="dark"] .registration-form-heading h2,
+html[data-theme="dark"] .registration-section-heading h3,
+html[data-theme="dark"] .registration-promise strong,
+html[data-theme="dark"] .contact-form-title h2,
+html[data-theme="dark"] .contact-side h2,
+html[data-theme="dark"] .faq-group > h3,
+html[data-theme="dark"] .faq-item button,
+html[data-theme="dark"] .faq-contact-cta h3,
+html[data-theme="dark"] .about-story-card h3,
+html[data-theme="dark"] .mission-card h2,
+html[data-theme="dark"] .info-audience-card h3,
+html[data-theme="dark"] .benefits-info-card h3 {
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .hero-eyebrow,
+html[data-theme="dark"] .section-kicker,
+html[data-theme="dark"] .info-eyebrow,
+html[data-theme="dark"] .registration-kicker {
+  color: #73dece;
+}
+
+html[data-theme="dark"] .category-card-copy > span,
+html[data-theme="dark"] .step-copy p,
+html[data-theme="dark"] .steps-intro,
+html[data-theme="dark"] .worker-card-name p,
+html[data-theme="dark"] .worker-meta,
+html[data-theme="dark"] .discovery-trust span,
+html[data-theme="dark"] .discovery-bottom-note,
+html[data-theme="dark"] .profile-about > p,
+html[data-theme="dark"] .profile-services > span,
+html[data-theme="dark"] .profile-contact-card > p,
+html[data-theme="dark"] .review-card > p,
+html[data-theme="dark"] .profile-no-reviews,
+html[data-theme="dark"] .info-hero-inner > p,
+html[data-theme="dark"] .info-lead,
+html[data-theme="dark"] .about-story-card p,
+html[data-theme="dark"] .problem-grid > div:first-child > p,
+html[data-theme="dark"] .mission-card p,
+html[data-theme="dark"] .info-section-heading-centered > p,
+html[data-theme="dark"] .info-audience-card > p,
+html[data-theme="dark"] .info-audience-card li,
+html[data-theme="dark"] .benefits-info-card li,
+html[data-theme="dark"] .contact-side > p,
+html[data-theme="dark"] .faq-intro > p,
+html[data-theme="dark"] .faq-answer-wrap p,
+html[data-theme="dark"] .faq-contact-cta p,
+html[data-theme="dark"] .info-bottom-cta > p {
+  color: var(--text-secondary);
+}
+
+html[data-theme="dark"] .floating-card,
+html[data-theme="dark"] .contact-detail-link,
+html[data-theme="dark"] .review-card,
+html[data-theme="dark"] .contact-info-demo,
+html[data-theme="dark"] .profile-no-reviews,
+html[data-theme="dark"] .profile-image-upload,
+html[data-theme="dark"] .registration-section-heading > span {
+  border-color: var(--line);
+  background-color: var(--surface-elevated);
+}
+
+html[data-theme="dark"] .floating-icon-gold {
+  background: #3b321d;
+  color: #f2c56b;
+}
+
+html[data-theme="dark"] .floating-icon-teal {
+  background: #173a39;
+  color: #8ce4d5;
+}
+
+html[data-theme="dark"] .floating-card strong,
+html[data-theme="dark"] .contact-detail-link strong,
+html[data-theme="dark"] .contact-info-card strong,
+html[data-theme="dark"] .review-card-heading strong {
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .floating-card small,
+html[data-theme="dark"] .hero-visual-note,
+html[data-theme="dark"] .proof-copy,
+html[data-theme="dark"] .contact-detail-link small,
+html[data-theme="dark"] .contact-info-card small,
+html[data-theme="dark"] .registration-form-heading p,
+html[data-theme="dark"] .registration-section-heading p,
+html[data-theme="dark"] .registration-field em,
+html[data-theme="dark"] .profile-contact-card > small,
+html[data-theme="dark"] .demo-data-note,
+html[data-theme="dark"] .contact-form-title p,
+html[data-theme="dark"] .contact-form-footnote {
+  color: #a8b5c7;
+}
+
+html[data-theme="dark"] .hero-search .search-divider,
+html[data-theme="dark"] .search-field,
+html[data-theme="dark"] .registration-form-heading,
+html[data-theme="dark"] .registration-form-section,
+html[data-theme="dark"] .profile-services,
+html[data-theme="dark"] .profile-hero-action,
+html[data-theme="dark"] .worker-profile-link,
+html[data-theme="dark"] .text-link,
+html[data-theme="dark"] .faq-item + .faq-item,
+html[data-theme="dark"] .faq-answer-wrap {
+  border-color: var(--line);
+}
+
+html[data-theme="dark"] .discovery-hero,
+html[data-theme="dark"] .info-hero {
+  background:
+    radial-gradient(ellipse at 85% 20%, rgba(32, 184, 165, 0.1), transparent 36%),
+    var(--surface-subtle);
+}
+
+html[data-theme="dark"] .discovery-hero-art,
+html[data-theme="dark"] .problem-illustration {
+  border-color: rgba(98, 216, 198, 0.2);
+  background:
+    radial-gradient(circle at center, rgba(32, 184, 165, 0.1) 0 35%, transparent 36%),
+    #132337;
+}
+
+html[data-theme="dark"] .discovery-art-icon {
+  border-color: var(--surface-subtle);
+}
+
+html[data-theme="dark"] .discovery-art-pin {
+  border-color: var(--surface-subtle);
+  background: #24384c;
+  color: #d7e4f2;
+}
+
+html[data-theme="dark"] .discovery-art-pin-two {
+  background: #24554f;
+  color: #d7f5ef;
+}
+
+html[data-theme="dark"] .discovery-art-pin-three {
+  background: #29445c;
+  color: #d7e4f2;
+}
+
+html[data-theme="dark"] .discovery-hero-copy h1,
+html[data-theme="dark"] .profile-not-found h1,
+html[data-theme="dark"] .profile-title h1,
+html[data-theme="dark"] .registration-intro h1,
+html[data-theme="dark"] .auth-heading h1,
+html[data-theme="dark"] .worker-dashboard-card h1,
+html[data-theme="dark"] .registration-success h1,
+html[data-theme="dark"] .info-hero h1 {
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .profile-verified,
+html[data-theme="dark"] .profile-title > p,
+html[data-theme="dark"] .profile-meta .profile-rating,
+html[data-theme="dark"] .profile-meta .profile-rating svg,
+html[data-theme="dark"] .review-average,
+html[data-theme="dark"] .worker-rating {
+  color: #f2c56b;
+}
+
+html[data-theme="dark"] .worker-rating {
+  background: #3b321d;
+}
+
+html[data-theme="dark"] .worker-profile-link:hover,
+html[data-theme="dark"] .section-link,
+html[data-theme="dark"] .text-link,
+html[data-theme="dark"] .benefits-link,
+html[data-theme="dark"] .info-inline-link,
+html[data-theme="dark"] .contact-faq-prompt a,
+html[data-theme="dark"] .discovery-bottom-note a,
+html[data-theme="dark"] .auth-text-button,
+html[data-theme="dark"] .auth-switch a,
+html[data-theme="dark"] .clear-filters-button {
+  color: #73dece;
+}
+
+html[data-theme="dark"] .filter-panel {
+  border-color: var(--line);
+  background: var(--surface);
+}
+
+html[data-theme="dark"] .filter-input-wrap,
+html[data-theme="dark"] .filter-control select,
+html[data-theme="dark"] .auth-input-wrap,
+html[data-theme="dark"] .registration-field input,
+html[data-theme="dark"] .registration-field select,
+html[data-theme="dark"] .registration-field textarea,
+html[data-theme="dark"] .contact-field input,
+html[data-theme="dark"] .contact-field textarea {
+  border-color: #3a4b60;
+  background-color: #101b2b;
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .filter-input-wrap:focus-within,
+html[data-theme="dark"] .filter-control select:focus,
+html[data-theme="dark"] .auth-input-wrap:focus-within,
+html[data-theme="dark"] .registration-field input:focus,
+html[data-theme="dark"] .registration-field select:focus,
+html[data-theme="dark"] .registration-field textarea:focus,
+html[data-theme="dark"] .contact-field input:focus,
+html[data-theme="dark"] .contact-field textarea:focus {
+  border-color: #42bba9;
+  outline-color: rgba(32, 184, 165, 0.25);
+  box-shadow: 0 0 0 3px rgba(32, 184, 165, 0.18);
+}
+
+html[data-theme="dark"] input::placeholder,
+html[data-theme="dark"] textarea::placeholder {
+  color: #8292a8;
+  opacity: 1;
+}
+
+html[data-theme="dark"] input,
+html[data-theme="dark"] textarea,
+html[data-theme="dark"] select {
+  color-scheme: dark;
+}
+
+html[data-theme="dark"] .filter-control select option {
+  background: #172438;
+  color: #f1f5f9;
+}
+
+html[data-theme="dark"] .filter-input-wrap svg,
+html[data-theme="dark"] .auth-input-wrap > svg {
+  color: #9aaabe;
+}
+
+html[data-theme="dark"] .clear-filters-button:hover {
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .active-filter-chip {
+  border-color: #315d5a;
+  background: #153332;
+  color: #9ce8dc;
+}
+
+html[data-theme="dark"] .active-filter-label,
+html[data-theme="dark"] .results-count,
+html[data-theme="dark"] .discovery-results-heading > span:first-child {
+  color: var(--text-secondary);
+}
+
+html[data-theme="dark"] .profile-skill {
+  background: #173a39;
+  color: #9ce8dc;
+}
+
+html[data-theme="dark"] .profile-contact-card,
+html[data-theme="dark"] .mission-card-teal,
+html[data-theme="dark"] .info-audience-worker,
+html[data-theme="dark"] .benefits-info-card-teal,
+html[data-theme="dark"] .faq-contact-cta {
+  border-color: #31564f;
+  background: #142a2e;
+}
+
+html[data-theme="dark"] .profile-contact-card .contact-card-icon,
+html[data-theme="dark"] .registration-form-icon,
+html[data-theme="dark"] .registration-promise > span,
+html[data-theme="dark"] .about-story-icon,
+html[data-theme="dark"] .mission-card-icon,
+html[data-theme="dark"] .info-audience-icon,
+html[data-theme="dark"] .contact-form-title > span,
+html[data-theme="dark"] .contact-info-icon,
+html[data-theme="dark"] .empty-results-icon,
+html[data-theme="dark"] .contact-modal-icon {
+  background: #173a39;
+  color: #8ce4d5;
+}
+
+html[data-theme="dark"] .profile-skill svg,
+html[data-theme="dark"] .service-bullet {
+  color: #8ce4d5;
+}
+
+html[data-theme="dark"] .portfolio-grid img,
+html[data-theme="dark"] .profile-avatar,
+html[data-theme="dark"] .worker-avatar,
+html[data-theme="dark"] .review-customer-avatar,
+html[data-theme="dark"] .profile-image-placeholder,
+html[data-theme="dark"] .profile-image-upload > img {
+  background-color: #26384b;
+}
+
+html[data-theme="dark"] .review-customer-avatar {
+  color: #d7e4f2;
+}
+
+html[data-theme="dark"] .contact-modal-backdrop {
+  background: rgba(2, 7, 16, 0.76);
+}
+
+html[data-theme="dark"] .contact-modal-close,
+html[data-theme="dark"] .contact-detail-icon,
+html[data-theme="dark"] .profile-image-browse {
+  border-color: var(--line);
+  background: var(--surface-elevated);
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .contact-modal-close:hover,
+html[data-theme="dark"] .profile-image-upload:hover,
+html[data-theme="dark"] .profile-image-browse:hover {
+  border-color: #3d746c;
+  background: #20394c;
+}
+
+html[data-theme="dark"] .contact-modal > p,
+html[data-theme="dark"] .demo-contact-note {
+  color: var(--text-secondary);
+}
+
+html[data-theme="dark"] .registration-page,
+html[data-theme="dark"] .auth-page,
+html[data-theme="dark"] .worker-dashboard-page {
+  background: var(--page);
+}
+
+html[data-theme="dark"] .auth-side-panel,
+html[data-theme="dark"] .benefits-section,
+html[data-theme="dark"] .sdg-section,
+html[data-theme="dark"] .site-footer {
+  background: #111c2e;
+}
+
+html[data-theme="dark"] .auth-side-panel {
+  border-left: 1px solid var(--line);
+}
+
+html[data-theme="dark"] .auth-brand-block,
+html[data-theme="dark"] .auth-side-content h2,
+html[data-theme="dark"] .auth-side-stat strong,
+html[data-theme="dark"] .benefits-heading h2,
+html[data-theme="dark"] .benefit-card h3,
+html[data-theme="dark"] .sdg-content h2,
+html[data-theme="dark"] .footer-brand {
+  color: #f1f5f9;
+}
+
+html[data-theme="dark"] .auth-side-content > p,
+html[data-theme="dark"] .auth-side-stat small,
+html[data-theme="dark"] .benefits-heading > p,
+html[data-theme="dark"] .benefit-card p,
+html[data-theme="dark"] .sdg-content p,
+html[data-theme="dark"] .footer-brand-column p,
+html[data-theme="dark"] .footer-bottom,
+html[data-theme="dark"] .footer-link-column > a {
+  color: #a8b5c7;
+}
+
+html[data-theme="dark"] .auth-role-option {
+  border-color: var(--line);
+  background: var(--surface);
+}
+
+html[data-theme="dark"] .auth-role-selected {
+  border-color: #347b72;
+  background: #153332;
+}
+
+html[data-theme="dark"] .auth-role-option strong {
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .auth-role-option small {
+  color: #a8b5c7;
+}
+
+html[data-theme="dark"] .auth-role-icon,
+html[data-theme="dark"] .auth-side-stat-icon {
+  background: #173a39;
+  color: #8ce4d5;
+}
+
+html[data-theme="dark"] .auth-password-toggle {
+  color: #b7c4d5;
+}
+
+html[data-theme="dark"] .auth-password-toggle:hover {
+  background: #263a50;
+  color: #fff;
+}
+
+html[data-theme="dark"] .auth-demo-note,
+html[data-theme="dark"] .worker-dashboard-note,
+html[data-theme="dark"] .registration-demo-note {
+  color: #a8b5c7;
+}
+
+html[data-theme="dark"] .auth-message-error,
+html[data-theme="dark"] .registration-error-banner,
+html[data-theme="dark"] .directory-error,
+html[data-theme="dark"] .session-error,
+html[data-theme="dark"] .theme-storage-error,
+html[data-theme="dark"] .contact-status-error {
+  border-color: #713e49;
+  background: #321f2a;
+  color: #ffb4b4;
+}
+
+html[data-theme="dark"] .auth-message-success,
+html[data-theme="dark"] .auth-message-info,
+html[data-theme="dark"] .contact-status-success,
+html[data-theme="dark"] .auth-route-notice {
+  border-color: #315d55;
+  background: #17332f;
+  color: #a3edcf;
+}
+
+html[data-theme="dark"] .auth-message-error svg,
+html[data-theme="dark"] .registration-error-banner svg,
+html[data-theme="dark"] .contact-status-error {
+  color: #ffb4b4;
+}
+
+html[data-theme="dark"] .auth-route-notice button {
+  color: #b3e8d2;
+}
+
+html[data-theme="dark"] .auth-route-notice button:hover {
+  background: #24453d;
+}
+
+html[data-theme="dark"] .registration-field > small,
+html[data-theme="dark"] .auth-field > small,
+html[data-theme="dark"] .auth-field-error,
+html[data-theme="dark"] .auth-role-field > small,
+html[data-theme="dark"] .contact-field > small {
+  color: #ffaaa9;
+}
+
+html[data-theme="dark"] .registration-field input[aria-invalid="true"],
+html[data-theme="dark"] .registration-field select[aria-invalid="true"],
+html[data-theme="dark"] .registration-field textarea[aria-invalid="true"],
+html[data-theme="dark"] .contact-field input[aria-invalid="true"],
+html[data-theme="dark"] .contact-field textarea[aria-invalid="true"],
+html[data-theme="dark"] .auth-input-wrap:has(input[aria-invalid="true"]) {
+  border-color: #e18383;
+}
+
+html[data-theme="dark"] .registration-submit:disabled,
+html[data-theme="dark"] .auth-submit:disabled {
+  border-color: #3a4b60;
+  background: #35475b;
+  color: #a8b5c7;
+}
+
+html[data-theme="dark"] .profile-verified {
+  color: #8ce4d5;
+}
+
+html[data-theme="dark"] .profile-hero-action > span {
+  color: #b7c4d5;
+}
+
+html[data-theme="dark"] .faq-item button {
+  background: var(--surface);
+}
+
+html[data-theme="dark"] .faq-item button:hover {
+  background: var(--surface-elevated);
+}
+
+html[data-theme="dark"] .faq-item-open button,
+html[data-theme="dark"] .faq-item-open button svg {
+  color: #8ce4d5;
+}
+
+html[data-theme="dark"] .faq-contact-cta .button {
+  color: #fff;
+}
+
+html[data-theme="dark"] .about-story-card {
+  background: var(--surface);
+}
+
+html[data-theme="dark"] .problem-center,
+html[data-theme="dark"] .problem-node,
+html[data-theme="dark"] .problem-node-one,
+html[data-theme="dark"] .problem-node-two,
+html[data-theme="dark"] .problem-node-three {
+  border-color: var(--surface-subtle);
+}
+
+html[data-theme="dark"] .problem-orbit {
+  border-color: #385467;
+}
+
+html[data-theme="dark"] .info-bottom-cta h2 {
+  color: var(--ink);
+}
+
+html[data-theme="dark"] .footer-link-column h2 {
+  color: #f1f5f9;
+}
+
+html[data-theme="dark"] .footer-link-column > a:hover {
+  color: #8ce4d5;
+}
+
+html[data-theme="dark"] .footer-bottom {
+  border-color: rgba(226, 232, 240, 0.14);
+}
+
+html[data-theme="dark"] .back-to-top {
+  border-color: #426176;
+  background: #1d2d43;
+  color: #f1f5f9;
+}
+
+html[data-theme="dark"] .back-to-top:hover {
+  background: #147f73;
+}
+
+html[data-theme="dark"] .contact-faq-prompt,
+html[data-theme="dark"] .contact-faq-prompt a {
+  color: var(--text-secondary);
+}
+
+html[data-theme="dark"] .contact-faq-prompt a {
+  color: #8ce4d5;
+}
+
+html[data-theme="dark"] .demo-contact-note svg,
+html[data-theme="dark"] .registration-privacy-note svg {
+  color: #8ce4d5;
+}
+
+html[data-theme="dark"] .theme-storage-error {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  z-index: 3;
+  width: max-content;
+  max-width: min(320px, calc(100vw - 32px));
+  margin: 0;
+  padding: 9px 11px;
+  border: 1px solid #713e49;
+  border-radius: 9px;
+  background: #321f2a;
+  color: #ffb4b4;
+  font-size: 11px;
+}
+
+@media (min-width: 761px) and (max-width: 850px) {
+  .header-inner {
+    min-height: 70px;
+  }
+
+  .mobile-menu-toggle {
+    display: inline-flex;
+  }
+
+  .navigation {
+    position: absolute;
+    top: calc(100% + 1px);
+    right: 0;
+    left: 0;
+    display: none;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 16px;
+    padding: 18px max(24px, calc((100% - 600px) / 2));
+    border-bottom: 1px solid var(--line);
+    background: var(--surface);
+    box-shadow: 0 16px 24px rgba(16, 35, 63, 0.08);
+  }
+
+  .navigation-open {
+    display: flex;
+  }
+
+  html[data-theme="dark"] .navigation {
+    background: var(--surface);
+  }
+
+  .navigation-links {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+  }
+
+  @media (max-width: 760px) {
+    html[data-theme="dark"] .navigation {
+      background: var(--surface);
+    }
+  }
+
+  .navigation-link {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .navigation-actions {
+    justify-content: flex-end;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-theme="dark"] *,
+  html[data-theme="dark"] *::before,
+  html[data-theme="dark"] *::after {
+    transition-duration: 0.01ms !important;
+  }
+}
